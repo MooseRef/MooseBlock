@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mooseblock",
+	"version": "${version}",
+	"name": "MooseBlock",
+	"description": "My first mod!",
+	"authors": [
+		"Moose!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/mooseblock/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.moose.mooseblock.mooseblock"
+		],
+		"client": [
+			"net.moose.mooseblock.mooseblockclient"
+		],
+		"fabric-datagen": [
+			"net.moose.mooseblock.mooseblockdatgen"
+		]
+	},
+	"mixins": [
+		"mooseblock.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.14",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
