@@ -2,6 +2,9 @@ package net.moose.mooseblock;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.moose.mooseblock.block.ModBlocks;
+import net.moose.mooseblock.item.ModItemGroup;
+import net.moose.mooseblock.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,8 +14,9 @@ public class mooseblock implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
+		ModItemGroup.registerItemGroups();
+		ModBlocks.registerModBlocks();
 	}
+
 }

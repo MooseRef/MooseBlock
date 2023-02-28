@@ -1,0 +1,11 @@
+{
+  "item.mooseblock.moosite": "Moosite",
+  "item.mooseblock.goxite" : "Goxite",
+  "item.mooseblock.raw_goxite" : "Raw Goxite",
+  "item.mooseblock.borpite" : "Borpite",
+  "item.mooseblock.raw_borpite" : "Raw Borpite",
+
+  "itemgroup.moosite": "Moosium",
+  "itemgroup.goxite": "Goxium",
+  "itemgroup.borpite": "Borpium"
+}
