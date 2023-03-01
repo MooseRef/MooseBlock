@@ -5,7 +5,15 @@
   "item.mooseblock.borpite" : "Borpite",
   "item.mooseblock.raw_borpite" : "Raw Borpite",
 
-  "itemgroup.moosite": "Moosium",
-  "itemgroup.goxite": "Goxium",
-  "itemgroup.borpite": "Borpium"
+  "block.mooseblock.moosite_ore": "Moosite Ore",
+  "block.mooseblock.deepslate_moosite_ore": "Deepslate Moosite Ore",
+  "block.mooseblock.block_of_moosite": "Block of Moosite",
+  "block.mooseblock.goxite_ore": "Goxite Ore",
+  "block.mooseblock.deepslate_goxite_ore": "Deepslate Goxite Ore",
+  "block.mooseblock.block_of_goxite": "Block of Goxite",
+  "block.mooseblock.borpite_ore": "Borpite Ore",
+  "block.mooseblock.deepslate_borpite_ore": "Deepslate Borpite Ore",
+  "block.mooseblock.block_of_borpite": "Block of Borpite",
+
+  "itemgroup.moosite": "Moosium"
 }

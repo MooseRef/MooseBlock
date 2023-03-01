@@ -3,7 +3,7 @@ package net.moose.mooseblock;
 import net.fabricmc.api.ModInitializer;
 
 import net.moose.mooseblock.block.ModBlocks;
-import net.moose.mooseblock.item.ModItemGroup;
+import net.moose.mooseblock.item.ModItemGroups;
 import net.moose.mooseblock.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,8 +14,8 @@ public class mooseblock implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
-		ModItemGroup.registerItemGroups();
 		ModBlocks.registerModBlocks();
 	}
 
