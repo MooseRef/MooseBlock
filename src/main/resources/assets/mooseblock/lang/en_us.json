@@ -11,9 +11,11 @@
   "block.mooseblock.goxite_ore": "Goxite Ore",
   "block.mooseblock.deepslate_goxite_ore": "Deepslate Goxite Ore",
   "block.mooseblock.block_of_goxite": "Block of Goxite",
+  "block.mooseblock.block_of_raw_goxite": "Block of Raw Goxite",
   "block.mooseblock.borpite_ore": "Borpite Ore",
   "block.mooseblock.deepslate_borpite_ore": "Deepslate Borpite Ore",
   "block.mooseblock.block_of_borpite": "Block of Borpite",
+  "block.mooseblock.block_of_raw_borpite": "Block of Raw Borpite",
 
   "itemgroup.moosite": "Moosium"
 }

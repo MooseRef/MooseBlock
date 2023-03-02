@@ -17,16 +17,30 @@ import net.moose.mooseblock.item.ModItemGroups;
 import net.moose.mooseblock.mooseblock;
 
 public class ModBlocks {
-    public static final Block MOOSITE_ORE = new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.00f).requiresTool(), UniformIntProvider.create(3,7));
-    public static final Block DEEPSLATE_MOOSITE_ORE = new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.00f).requiresTool(), UniformIntProvider.create(3,7));
-    public static final Block BLOCK_OF_MOOSITE = new Block(FabricBlockSettings.of(Material.METAL).strength(4.20f).requiresTool());
-    public static final Block GOXITE_ORE = new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.00f).requiresTool(), UniformIntProvider.create(2,5));
-    public static final Block DEEPSLATE_GOXITE_ORE = new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.00f).requiresTool(), UniformIntProvider.create(2,5));
-    public static final Block BLOCK_OF_GOXITE = new Block(FabricBlockSettings.of(Material.METAL).strength(4.20f).requiresTool());
-    public static final Block BORPITE_ORE = new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.00f).requiresTool(), UniformIntProvider.create(1,3));
-    public static final Block DEEPSLATE_BORPITE_ORE = new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.00f).requiresTool(), UniformIntProvider.create(1,3));
-    public static final Block BLOCK_OF_BORPITE = new Block(FabricBlockSettings.of(Material.METAL).strength(4.20f).requiresTool());
-      private static Block registerBlock(String name, Block block, ItemGroup group) {
+    public static final Block MOOSITE_ORE = registerBlock("moosite_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(), UniformIntProvider.create(3,7)), ModItemGroups.MOOSITE);
+    public static final Block DEEPSLATE_MOOSITE_ORE = registerBlock("deepslate_moosite_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(), UniformIntProvider.create(3,7)), ModItemGroups.MOOSITE);
+    public static final Block BLOCK_OF_MOOSITE = registerBlock("block_of_moosite",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroups.MOOSITE);
+    public static final Block GOXITE_ORE = registerBlock("goxite_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(), UniformIntProvider.create(2,5)), ModItemGroups.MOOSITE);
+    public static final Block DEEPSLATE_GOXITE_ORE = registerBlock("deepslate_goxite_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(), UniformIntProvider.create(2,5)), ModItemGroups.MOOSITE);
+    public static final Block BLOCK_OF_GOXITE = registerBlock("block_of_goxite",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroups.MOOSITE);
+    public static final Block BLOCK_OF_RAW_GOXITE = registerBlock("block_of_raw_goxite",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroups.MOOSITE);
+    public static final Block BORPITE_ORE = registerBlock("borpite_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(), UniformIntProvider.create(1,3)), ModItemGroups.MOOSITE);
+    public static final Block DEEPSLATE_BORPITE_ORE = registerBlock("deepslate_borpite_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(), UniformIntProvider.create(1,3)), ModItemGroups.MOOSITE);
+    public static final Block BLOCK_OF_BORPITE = registerBlock("block_of_borpite",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroups.MOOSITE);
+    public static final Block BLOCK_OF_RAW_BORPITE = registerBlock("block_of_raw_borpite",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroups.MOOSITE);
+
+    private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
         return Registry.register(Registries.BLOCK, new Identifier(mooseblock.MOD_ID, name), block);
     }
@@ -37,15 +51,6 @@ public class ModBlocks {
         return item;
     }
     public static void registerModBlocks(){
-          registerBlock("moosite_ore",MOOSITE_ORE, ModItemGroups.MOOSITE);
-          registerBlock("deepslate_moosite_ore",DEEPSLATE_MOOSITE_ORE, ModItemGroups.MOOSITE);
-          registerBlock("block_of_moosite",BLOCK_OF_MOOSITE, ModItemGroups.MOOSITE);
-          registerBlock("goxite_ore",GOXITE_ORE, ModItemGroups.MOOSITE);
-          registerBlock("deepslate_goxite_ore",DEEPSLATE_GOXITE_ORE, ModItemGroups.MOOSITE);
-          registerBlock("block_of_goxite",BLOCK_OF_GOXITE, ModItemGroups.MOOSITE);
-          registerBlock("borpite_ore",BORPITE_ORE, ModItemGroups.MOOSITE);
-          registerBlock("deepslate_borpite_ore",DEEPSLATE_BORPITE_ORE, ModItemGroups.MOOSITE);
-          registerBlock("block_of_borpite",BLOCK_OF_BORPITE, ModItemGroups.MOOSITE);
         mooseblock.LOGGER.info("Registering ModBlocks for " + mooseblock.MOD_ID);
     }
 
