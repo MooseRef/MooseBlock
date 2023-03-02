@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "mooseblock:deepslate_borpite_ore"
+  },
+  "result": "mooseblock:borpite",
+  "experience": 0.7,
+  "cookingtime": 100
+}

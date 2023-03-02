@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "mooseblock:raw_borpite"
+  },
+  "result": "mooseblock:borpite",
+  "experience": 0.7,
+  "cookingtime": 200
+}
