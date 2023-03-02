@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "mooseblock:block_of_moosite",
+    "mooseblock:moosite_ore",
+    "mooseblock:block_of_goxite",
+    "mooseblock:block_of_borpite",
+    "mooseblock:block_of_raw_goxite",
+    "mooseblock:block_of_raw_borpite",
+    "mooseblock:deepslate_moosite_ore",
+    "mooseblock:borpite_ore",
+    "mooseblock:deepslate_borpite_ore",
+    "mooseblock:goxite_ore",
+    "mooseblock:deepslate_goxite_ore"
+
+  ]
+}

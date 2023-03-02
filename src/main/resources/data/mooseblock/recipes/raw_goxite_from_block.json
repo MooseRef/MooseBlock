@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mooseblock:block_of_raw_goxite"
+    }
+  ],
+  "result": {
+
+    "item": "mooseblock:raw_goxite",
+    "count": 9
+  }
+}

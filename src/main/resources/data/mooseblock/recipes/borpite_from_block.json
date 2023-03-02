@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mooseblock:block_of_borpite"
+    }
+  ],
+  "result": {
+
+    "item": "mooseblock:borpite",
+    "count": 9
+  }
+}

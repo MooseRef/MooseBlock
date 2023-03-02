@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "mooseblock:block_of_goxite",
+    "mooseblock:block_of_raw_goxite",
+    "mooseblock:goxite_ore",
+    "mooseblock:deepslate_goxite_ore"
+
+      ]
+}

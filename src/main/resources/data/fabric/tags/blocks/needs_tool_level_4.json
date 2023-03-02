@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "mooseblock:block_of_moosite",
+    "mooseblock:moosite_ore",
+    "mooseblock:deepslate_moosite_ore"
+  ]
+}
