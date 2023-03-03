@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "mooseblock:goxite"
+    }
+  },
+  "pattern": [
+    "   ",
+    "# #",
+    "# #"
+  ],
+  "result": {
+    "item": "mooseblock:goxite_boots"
+  }
+}

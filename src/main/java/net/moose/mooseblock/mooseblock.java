@@ -12,6 +12,8 @@ public class mooseblock implements ModInitializer {
 	public static final String MOD_ID = "mooseblock";
 	public static final Logger LOGGER = LoggerFactory.getLogger("mooseblock");
 
+
+
 	@Override
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
