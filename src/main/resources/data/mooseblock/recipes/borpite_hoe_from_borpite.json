@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "mooseblock:borpite"
+    },
+    "$": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "##",
+    " $",
+    " $"
+  ],
+  "result": {
+    "item": "mooseblock:borpite_hoe"
+  }
+}

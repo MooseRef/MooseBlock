@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "mooseblock:goxite_ore"
-  },
-  "result": "mooseblock:goxite",
-  "experience": 0.7,
-  "cookingtime": 100
-}
