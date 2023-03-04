@@ -31,6 +31,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_MOOSITE_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLOCK_OF_MOOSITE);
 
+        //FIX LATER
+        //
+     //   blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROP, Properties.AGE_7, 0, 1, 2, 3, 4, 5, 6, 6);
+
     }
 
     @Override
@@ -70,6 +74,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MOOSITE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MOOSITE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MOOSITE_PICKAXE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.TOMATO_SEEDS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TOMATO, Models.GENERATED);
 
 
     }

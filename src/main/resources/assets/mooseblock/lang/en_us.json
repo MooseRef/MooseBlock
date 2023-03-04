@@ -35,6 +35,10 @@
   "item.mooseblock.borpite_axe" : "Borpite Axe",
   "item.mooseblock.borpite_hoe" : "Borpite Hoe",
 
+  "item.mooseblock.tomato_seeds" : "Tomato Seeds",
+  "item.mooseblock.tomato" : "Tomato",
+
+
 
   "block.mooseblock.moosite_ore": "Moosite Ore",
   "block.mooseblock.deepslate_moosite_ore": "Deepslate Moosite Ore",
@@ -47,6 +51,8 @@
   "block.mooseblock.deepslate_borpite_ore": "Deepslate Borpite Ore",
   "block.mooseblock.block_of_borpite": "Block of Borpite",
   "block.mooseblock.block_of_raw_borpite": "Block of Raw Borpite",
+
+  "block.mooseblock.tomato_crop": "Tomato Crop",
 
   "itemgroup.moosite": "Moosium"
 }

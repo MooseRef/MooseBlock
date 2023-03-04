@@ -7,6 +7,7 @@ import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.moose.mooseblock.block.ModBlocks;
 import net.moose.mooseblock.mooseblock;
 
 public class ModItems {
@@ -47,8 +48,13 @@ public class ModItems {
     public static final Item MOOSITE_AXE = registerItem("moosite_axe", new ModAxeItem(ModToolMaterial.MOOSITE, 5.0f, -3.0f, new FabricItemSettings().fireproof()));
     public static final Item MOOSITE_HOE = registerItem("moosite_hoe", new ModHoeItem(ModToolMaterial.MOOSITE, -3, 0.0f, new FabricItemSettings().fireproof()));
 
+    public static final Item TOMATO_SEEDS = registerItem("tomato_seeds", new AliasedBlockItem(ModBlocks.TOMATO_CROP, new FabricItemSettings()));
+    public static final Item TOMATO = registerItem("tomato", new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(1).saturationModifier(1f).build())));
+
 
     public static void addItemsToItemGroup() {
+
+        // ADD TO THE ABOVE ITEMS????
 
         addToItemGroup(ModItemGroups.MOOSITE, GOXITE);
         addToItemGroup(ModItemGroups.MOOSITE, RAW_GOXITE);
@@ -85,6 +91,9 @@ public class ModItems {
         addToItemGroup(ModItemGroups.MOOSITE, MOOSITE_AXE);
         addToItemGroup(ModItemGroups.MOOSITE, MOOSITE_PICKAXE);
         addToItemGroup(ModItemGroups.MOOSITE, MOOSITE_HOE);
+
+        addToItemGroup(ModItemGroups.MOOSITE, TOMATO_SEEDS);
+        addToItemGroup(ModItemGroups.MOOSITE, TOMATO);
     }
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(mooseblock.MOD_ID, name), item);

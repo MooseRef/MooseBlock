@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
@@ -13,10 +14,12 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.moose.mooseblock.block.custom.TomatoCropBlock;
 import net.moose.mooseblock.item.ModItemGroups;
 import net.moose.mooseblock.mooseblock;
 
 public class ModBlocks {
+
 
     public static final Block GOXITE_ORE = registerBlock("goxite_ore",
             new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f,4.0f).requiresTool()), ModItemGroups.MOOSITE);
@@ -43,6 +46,13 @@ public class ModBlocks {
     public static final Block BLOCK_OF_MOOSITE = registerBlock("block_of_moosite",
             new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f,4.0f).requiresTool()), ModItemGroups.MOOSITE);
 
+    public static final Block TOMATO_CROP = registerBlockWithoutItem("tomato_crop",
+            new TomatoCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)), ModItemGroups.MOOSITE);
+
+
+    private static Block registerBlockWithoutItem(String name, Block block, ItemGroup group) {
+        return Registry.register(Registries.BLOCK, new Identifier(mooseblock.MOD_ID, name), block);
+    }
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);

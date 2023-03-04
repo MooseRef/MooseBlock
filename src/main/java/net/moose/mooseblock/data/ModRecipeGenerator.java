@@ -69,6 +69,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.MOOSITE, RecipeCategory.DECORATIONS,
                 ModBlocks.BLOCK_OF_MOOSITE);
 
+        offerSingleOutputShapelessRecipe(exporter,ModItems.TOMATO_SEEDS,ModItems.TOMATO,"tomato_seeds");
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.GOXITE_BOOTS)
                 .pattern("   ")

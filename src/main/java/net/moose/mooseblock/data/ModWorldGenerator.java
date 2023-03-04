@@ -13,12 +13,14 @@ public class ModWorldGenerator extends FabricDynamicRegistryProvider {
     }
 
     @Override
-    protected void configure(RegistryWrapper.WrapperLookup registries, Entries entries) {
+    protected void configure(RegistryWrapper.WrapperLookup registries, Entries entries)
+    {
         // HERE GOES FUTURE WORLD GEN!
     }
 
     @Override
-    public String getName() {
+    public String getName()
+    {
         return mooseblock.MOD_ID;
     }
 }
