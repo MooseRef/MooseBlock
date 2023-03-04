@@ -31,9 +31,19 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_MOOSITE_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLOCK_OF_MOOSITE);
 
+        blockStateModelGenerator.registerLog(ModBlocks.MOOD_LOG);
+        blockStateModelGenerator.registerLog(ModBlocks.MOOD_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_MOOD_LOG);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_MOOD_WOOD);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MOOD_PLANKS);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MOOD_LEAVES);
+
+       // blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.MOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
         //FIX LATER
         //
-     //   blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROP, Properties.AGE_7, 0, 1, 2, 3, 4, 5, 6, 6);
+       //   blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROP, Properties.AGE_7, 0, 1, 2, 3, 4, 5, 6, 6);
 
     }
 

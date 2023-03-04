@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "tomato_seeds",
+  "ingredients": [
+    {
+      "item": "mooseblock:tomato"
+    }
+  ],
+  "result": {
+    "item": "mooseblock:tomato_seeds"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mooseblock:block/moosite_ore"
+    }
+  }
+}

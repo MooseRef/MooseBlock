@@ -38,7 +38,13 @@
   "item.mooseblock.tomato_seeds" : "Tomato Seeds",
   "item.mooseblock.tomato" : "Tomato",
 
-
+  "block.mooseblock.mood_log": "Mood Log",
+  "block.mooseblock.mood_wood": "Mood Wood",
+  "block.mooseblock.stripped_mood_log": "Stripped Mood Log",
+  "block.mooseblock.stripped_mood_wood": "Stripped Mood Wood",
+  "block.mooseblock.mood_planks": "Mood Planks",
+  "block.mooseblock.mood_leaves": "Mood Leaves",
+  "block.mooseblock.mood_sapling": "Mood Sapling",
 
   "block.mooseblock.moosite_ore": "Moosite Ore",
   "block.mooseblock.deepslate_moosite_ore": "Deepslate Moosite Ore",

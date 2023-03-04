@@ -3,10 +3,7 @@ package net.moose.mooseblock.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.ExperienceDroppingBlock;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -19,6 +16,23 @@ import net.moose.mooseblock.item.ModItemGroups;
 import net.moose.mooseblock.mooseblock;
 
 public class ModBlocks {
+
+    public static final Block MOOD_LOG = registerBlock("mood_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(4.0f).requiresTool()),ModItemGroups.MOOSITE);
+    public static final Block MOOD_WOOD = registerBlock("mood_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).strength(4.0f).requiresTool()),ModItemGroups.MOOSITE);
+    public static final Block STRIPPED_MOOD_LOG = registerBlock("stripped_mood_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(4.0f).requiresTool()),ModItemGroups.MOOSITE);
+    public static final Block STRIPPED_MOOD_WOOD = registerBlock("stripped_mood_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4.0f).requiresTool()),ModItemGroups.MOOSITE);
+
+    public static final Block MOOD_PLANKS = registerBlock("mood_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(4.0f).requiresTool()),ModItemGroups.MOOSITE);
+    public static final Block MOOD_LEAVES = registerBlock("mood_leaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(4.0f).requiresTool()),ModItemGroups.MOOSITE);
+
+    //public static final Block MOOD_SAPLING = registerBlock("mood_sapling",
+    //        new SaplingBlock(,FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(4.0f).requiresTool()),ModItemGroups.MOOSITE);
 
 
     public static final Block GOXITE_ORE = registerBlock("goxite_ore",
