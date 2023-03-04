@@ -1,10 +1,10 @@
 {
   "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:moosite"
+  },
   "base": {
     "item": "minecraft:netherite_pickaxe"
-  },
-  "addition": {
-    "item": "mooseblock:moosite"
   },
   "result": {
     "item": "mooseblock:moosite_pickaxe"
