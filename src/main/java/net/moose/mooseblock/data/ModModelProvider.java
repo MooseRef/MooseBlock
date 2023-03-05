@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.Item;
 import net.moose.mooseblock.block.ModBlocks;
 import net.moose.mooseblock.item.ModItems;
 
@@ -31,15 +32,15 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_MOOSITE_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLOCK_OF_MOOSITE);
 
-        blockStateModelGenerator.registerLog(ModBlocks.MOOD_LOG);
-        blockStateModelGenerator.registerLog(ModBlocks.MOOD_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_MOOD_LOG);
-        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_MOOD_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.MOOD_LOG).log(ModBlocks.MOOD_LOG).wood(ModBlocks.MOOD_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_MOOD_LOG).log(ModBlocks.STRIPPED_MOOD_LOG).wood(ModBlocks.STRIPPED_MOOD_WOOD);
 
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MOOD_PLANKS);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MOOD_LEAVES);
 
-       // blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.MOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.MOOD_SAPLING,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+
 
         //FIX LATER
         //
@@ -50,6 +51,8 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator)
     {
+        itemModelGenerator.register(Item.fromBlock(ModBlocks.MOOD_SAPLING), Models.GENERATED);
+
         itemModelGenerator.register(ModItems.GOXITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_GOXITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.GOXITE_BOOTS, Models.GENERATED);

@@ -23,6 +23,28 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter)
     {
+        // FIX PLANKS AFTER ITEMS TAGS
+        // offerPlanksRecipe(exporter,ModBlocks.MOOD_PLANKS, ItemTags.OAK_LOGS,4);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.MOOD_WOOD)
+                .pattern("XX")
+                .pattern("XX")
+                .pattern("  ")
+                .input('X',ModBlocks.MOOD_LOG)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.MOOD_LOG),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.MOOD_LOG))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.MOOD_WOOD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.STRIPPED_MOOD_WOOD)
+                .pattern("XX")
+                .pattern("XX")
+                .pattern("  ")
+                .input('X',ModBlocks.STRIPPED_MOOD_LOG)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_MOOD_LOG),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_MOOD_LOG))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.STRIPPED_MOOD_WOOD)));
+
+
         offerSmelting(exporter, List.of(ModItems.RAW_GOXITE), RecipeCategory.MISC, ModItems.GOXITE,
                 0.5f, 200,"moosite");
         offerBlasting(exporter, List.of(ModItems.RAW_GOXITE), RecipeCategory.MISC, ModItems.GOXITE,

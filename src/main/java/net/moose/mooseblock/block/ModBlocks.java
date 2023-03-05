@@ -9,31 +9,32 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.moose.mooseblock.block.custom.TomatoCropBlock;
 import net.moose.mooseblock.item.ModItemGroups;
 import net.moose.mooseblock.mooseblock;
+import net.moose.mooseblock.world.tree.MoodSaplingGenerator;
 
 public class ModBlocks {
 
     public static final Block MOOD_LOG = registerBlock("mood_log",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(4.0f).requiresTool()),ModItemGroups.MOOSITE);
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
     public static final Block MOOD_WOOD = registerBlock("mood_wood",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).strength(4.0f).requiresTool()),ModItemGroups.MOOSITE);
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
     public static final Block STRIPPED_MOOD_LOG = registerBlock("stripped_mood_log",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(4.0f).requiresTool()),ModItemGroups.MOOSITE);
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
     public static final Block STRIPPED_MOOD_WOOD = registerBlock("stripped_mood_wood",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4.0f).requiresTool()),ModItemGroups.MOOSITE);
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
 
     public static final Block MOOD_PLANKS = registerBlock("mood_planks",
-            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(4.0f).requiresTool()),ModItemGroups.MOOSITE);
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
     public static final Block MOOD_LEAVES = registerBlock("mood_leaves",
-            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(4.0f).requiresTool()),ModItemGroups.MOOSITE);
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(0.2f).requiresTool()),ModItemGroups.MOOSITE);
 
-    //public static final Block MOOD_SAPLING = registerBlock("mood_sapling",
-    //        new SaplingBlock(,FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(4.0f).requiresTool()),ModItemGroups.MOOSITE);
-
+    public static final Block MOOD_SAPLING = registerBlock("mood_sapling",
+            new SaplingBlock(new MoodSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().breakInstantly().requiresTool().sounds(BlockSoundGroup.GRASS)),ModItemGroups.MOOSITE);
 
     public static final Block GOXITE_ORE = registerBlock("goxite_ore",
             new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f,4.0f).requiresTool()), ModItemGroups.MOOSITE);
