@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mooseblock:block/polished_gneiss_slab"
+    },
+    "type=double": {
+      "model": "mooseblock:block/polished_gneiss"
+    },
+    "type=top": {
+      "model": "mooseblock:block/polished_gneiss_slab_top"
+    }
+  }
+}

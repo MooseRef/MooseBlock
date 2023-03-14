@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/crop",
   "textures": {
-    "crop": "mooseblock:block/tomato_stage6"
+    "crop": "mooseblock:block/tomato_crop_stage5"
   }
 }

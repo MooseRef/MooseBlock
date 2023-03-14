@@ -11,7 +11,16 @@
     "mooseblock:borpite_ore",
     "mooseblock:deepslate_borpite_ore",
     "mooseblock:goxite_ore",
-    "mooseblock:deepslate_goxite_ore"
+    "mooseblock:deepslate_goxite_ore",
+
+    "mooseblock:regen_pad",
+
+    "mooseblock:gneiss",
+    "mooseblock:polished_gneiss",
+    "mooseblock:gneiss_stairs",
+    "mooseblock:gneiss_slab",
+    "mooseblock:polished_gneiss_stairs",
+    "mooseblock:polished_gneiss_slab"
 
   ]
 }

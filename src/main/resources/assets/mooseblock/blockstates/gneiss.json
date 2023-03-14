@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "mooseblock:block/gneiss_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "mooseblock:block/gneiss"
+    },
+    "axis=z": {
+      "model": "mooseblock:block/gneiss_horizontal",
+      "x": 90
+    }
+  }
+}

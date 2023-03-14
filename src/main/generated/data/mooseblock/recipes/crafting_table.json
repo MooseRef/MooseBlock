@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "mooseblock:mood_planks"
+    }
+  },
+  "pattern": [
+    "XX",
+    "XX",
+    "  "
+  ],
+  "result": {
+    "item": "minecraft:crafting_table"
+  }
+}

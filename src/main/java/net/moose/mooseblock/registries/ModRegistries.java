@@ -6,7 +6,7 @@ import net.moose.mooseblock.mooseblock;
 
 public class ModRegistries {
 
-    public static void registerModFuels(){
+       public static void registerModFuels(){
         System.out.println("Now Registering Fuels for "+ mooseblock.MOD_ID);
         FuelRegistry registry = FuelRegistry.INSTANCE;
 

@@ -37,14 +37,20 @@
 
   "item.mooseblock.tomato_seeds" : "Tomato Seeds",
   "item.mooseblock.tomato" : "Tomato",
+  "item.mooseblock.tomato_soup" : "Tomato Soup",
+
+  "item.mooseblock.dice_icosahedron" : "Dice Icosahedron",
 
   "block.mooseblock.mood_log": "Mood Log",
   "block.mooseblock.mood_wood": "Mood Wood",
   "block.mooseblock.stripped_mood_log": "Stripped Mood Log",
   "block.mooseblock.stripped_mood_wood": "Stripped Mood Wood",
-  "block.mooseblock.mood_planks": "Mood Planks",
   "block.mooseblock.mood_leaves": "Mood Leaves",
   "block.mooseblock.mood_sapling": "Mood Sapling",
+  "block.mooseblock.mood_planks": "Mood Planks",
+  "block.mooseblock.mood_stairs": "Mood Stairs",
+  "block.mooseblock.mood_slab": "Mood Slab",
+
 
   "block.mooseblock.moosite_ore": "Moosite Ore",
   "block.mooseblock.deepslate_moosite_ore": "Deepslate Moosite Ore",
@@ -58,7 +64,25 @@
   "block.mooseblock.block_of_borpite": "Block of Borpite",
   "block.mooseblock.block_of_raw_borpite": "Block of Raw Borpite",
 
+  "block.mooseblock.gneiss": "Gneiss",
+  "block.mooseblock.polished_gneiss": "Polished Gneiss",
+  "block.mooseblock.gneiss_stairs": "Gneiss Stairs",
+  "block.mooseblock.gneiss_slab": "Gneiss Slab",
+  "block.mooseblock.polished_gneiss_stairs": "Polished Gneiss Stairs",
+  "block.mooseblock.polished_gneiss_slab": "Polished Gneiss Slab",
+
   "block.mooseblock.tomato_crop": "Tomato Crop",
 
-  "itemgroup.moosite": "Moosium"
+  "block.mooseblock.regen_pad": "Regen Pad",
+
+  "enchantment.mooseblock.frost": "Frost",
+
+  "itemgroup.moosite": "Moosium",
+
+
+
+  "roll.outcome": "Your roll is...",
+  "roll.tooltip": "Press Shift for more info!",
+  "roll.twentytooltip": "Right Click to Roll a D20"
+
 }

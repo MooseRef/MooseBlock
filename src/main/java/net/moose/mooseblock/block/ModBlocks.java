@@ -12,6 +12,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.moose.mooseblock.block.custom.MoodLeavesBlock;
+import net.moose.mooseblock.block.custom.RegenPadBlock;
 import net.moose.mooseblock.block.custom.TomatoCropBlock;
 import net.moose.mooseblock.item.ModItemGroups;
 import net.moose.mooseblock.mooseblock;
@@ -27,14 +29,33 @@ public class ModBlocks {
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
     public static final Block STRIPPED_MOOD_WOOD = registerBlock("stripped_mood_wood",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+    public static final Block MOOD_LEAVES = registerBlock("mood_leaves",
+            new MoodLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(0.2f).requiresTool()),ModItemGroups.MOOSITE);
 
     public static final Block MOOD_PLANKS = registerBlock("mood_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
-    public static final Block MOOD_LEAVES = registerBlock("mood_leaves",
-            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(0.2f).requiresTool()),ModItemGroups.MOOSITE);
+    public static final Block MOOD_STAIRS = registerBlock("mood_stairs",
+            new StairsBlock(MOOD_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+    public static final Block MOOD_SLAB = registerBlock("mood_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
 
     public static final Block MOOD_SAPLING = registerBlock("mood_sapling",
             new SaplingBlock(new MoodSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().breakInstantly().requiresTool().sounds(BlockSoundGroup.GRASS)),ModItemGroups.MOOSITE);
+
+    public static final Block GNEISS = registerBlock("gneiss",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_PILLAR).strength(3.0f,3.0f).requiresTool()), ModItemGroups.MOOSITE);
+    public static final Block POLISHED_GNEISS = registerBlock("polished_gneiss",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_PILLAR).strength(3.0f,3.0f).requiresTool()), ModItemGroups.MOOSITE);
+    public static final Block GNEISS_STAIRS = registerBlock("gneiss_stairs",
+            new StairsBlock(MOOD_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.QUARTZ_STAIRS).strength(3.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+    public static final Block GNEISS_SLAB = registerBlock("gneiss_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_SLAB).strength(3.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+    public static final Block POLISHED_GNEISS_STAIRS = registerBlock("polished_gneiss_stairs",
+            new StairsBlock(MOOD_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.QUARTZ_STAIRS).strength(3.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+    public static final Block POLISHED_GNEISS_SLAB = registerBlock("polished_gneiss_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_SLAB).strength(3.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+
+
 
     public static final Block GOXITE_ORE = registerBlock("goxite_ore",
             new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f,4.0f).requiresTool()), ModItemGroups.MOOSITE);
@@ -63,6 +84,9 @@ public class ModBlocks {
 
     public static final Block TOMATO_CROP = registerBlockWithoutItem("tomato_crop",
             new TomatoCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)), ModItemGroups.MOOSITE);
+
+    public static final Block REGEN_PAD = registerBlock("regen_pad",
+            new RegenPadBlock(FabricBlockSettings.of(Material.METAL).strength(3.0f,4.0f)), ModItemGroups.MOOSITE);
 
 
     private static Block registerBlockWithoutItem(String name, Block block, ItemGroup group) {

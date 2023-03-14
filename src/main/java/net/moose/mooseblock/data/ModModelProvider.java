@@ -41,10 +41,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.MOOD_SAPLING,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
 
-
-        //FIX LATER
-        //
-       //   blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROP, Properties.AGE_7, 0, 1, 2, 3, 4, 5, 6, 6);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.REGEN_PAD);
 
     }
 
@@ -90,6 +87,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.TOMATO_SEEDS, Models.GENERATED);
         itemModelGenerator.register(ModItems.TOMATO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TOMATO_SOUP, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.DICE_ICOSAHEDRON, Models.GENERATED);
 
 
     }

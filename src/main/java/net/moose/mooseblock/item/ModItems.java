@@ -8,6 +8,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.moose.mooseblock.block.ModBlocks;
+import net.moose.mooseblock.item.custom.DiceIcosahedronItem;
 import net.moose.mooseblock.mooseblock;
 
 public class ModItems {
@@ -50,7 +51,12 @@ public class ModItems {
 
     public static final Item TOMATO_SEEDS = registerItem("tomato_seeds", new AliasedBlockItem(ModBlocks.TOMATO_CROP, new FabricItemSettings()));
     public static final Item TOMATO = registerItem("tomato", new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(1).saturationModifier(1f).build())));
+    public static final Item TOMATO_SOUP = registerItem("tomato_soup", new StewItem(new FabricItemSettings().food(new FoodComponent.Builder().hunger(12).saturationModifier(1f).build()).maxCount(1)));
 
+    public static final Item DICE_ICOSAHEDRON = registerItem("dice_icosahedron", new DiceIcosahedronItem(new FabricItemSettings().maxCount(1)));
+
+   // public static final Item MOOD_BOAT = registerItem("mood_boat", (Item)new BoatItem(false, BoatEntity.Type.OAK, new Item.Settings().maxCount(1)));
+   // public static final Item MOOD_CHEST_BOAT = registerItem("mood_chest_boat", (Item)new BoatItem(true, BoatEntity.Type.OAK, new Item.Settings().maxCount(1)));
 
     public static void addItemsToItemGroup() {
 
@@ -94,6 +100,9 @@ public class ModItems {
 
         addToItemGroup(ModItemGroups.MOOSITE, TOMATO_SEEDS);
         addToItemGroup(ModItemGroups.MOOSITE, TOMATO);
+        addToItemGroup(ModItemGroups.MOOSITE, TOMATO_SOUP);
+
+        addToItemGroup(ModItemGroups.MOOSITE, DICE_ICOSAHEDRON);
     }
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(mooseblock.MOD_ID, name), item);

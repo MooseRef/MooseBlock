@@ -20,8 +20,10 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MOOD_WOOD);
         addDrop(ModBlocks.STRIPPED_MOOD_LOG);
         addDrop(ModBlocks.STRIPPED_MOOD_WOOD);
-        addDrop(ModBlocks.MOOD_PLANKS);
         addDrop(ModBlocks.MOOD_SAPLING);
+        addDrop(ModBlocks.MOOD_PLANKS);
+        addDrop(ModBlocks.MOOD_STAIRS);
+        addDrop(ModBlocks.MOOD_SLAB);
 
         addDrop(ModBlocks.MOOD_LEAVES,leavesDrops(ModBlocks.MOOD_LEAVES,ModBlocks.MOOD_SAPLING,SAPLING_DROP_CHANCE));
 
@@ -39,9 +41,17 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DEEPSLATE_MOOSITE_ORE,oreDrops(ModBlocks.DEEPSLATE_MOOSITE_ORE, ModItems.MOOSITE));
         addDrop(ModBlocks.BLOCK_OF_MOOSITE);
 
+        addDrop(ModBlocks.GNEISS);
+        addDrop(ModBlocks.POLISHED_GNEISS);
+        addDrop(ModBlocks.GNEISS_STAIRS);
+        addDrop(ModBlocks.GNEISS_SLAB);
+        addDrop(ModBlocks.POLISHED_GNEISS_STAIRS);
+        addDrop(ModBlocks.POLISHED_GNEISS_SLAB);
+
         BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.TOMATO_CROP).properties(StatePredicate.Builder.create().exactMatch(TomatoCropBlock.AGE, 6));
         addDrop(ModBlocks.TOMATO_CROP,cropDrops(ModBlocks.TOMATO_CROP,ModItems.TOMATO_SEEDS,ModItems.TOMATO, builder));
 
+        addDrop(ModBlocks.REGEN_PAD);
     }
 
 }

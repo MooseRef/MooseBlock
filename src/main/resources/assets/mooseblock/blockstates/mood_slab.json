@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mooseblock:block/mood_slab"
+    },
+    "type=double": {
+      "model": "mooseblock:block/mood_planks"
+    },
+    "type=top": {
+      "model": "mooseblock:block/mood_slab_top"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "mooseblock:block/mood_planks",
+    "side": "mooseblock:block/mood_planks",
+    "top": "mooseblock:block/mood_planks"
+  }
+}
