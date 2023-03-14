@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "mooseblock:block/mood_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "mooseblock:block/mood_log"
+    },
+    "axis=z": {
+      "model": "mooseblock:block/mood_log_horizontal",
+      "x": 90
+    }
+  }
+}

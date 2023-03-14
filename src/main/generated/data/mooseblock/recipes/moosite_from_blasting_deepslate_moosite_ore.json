@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "group": "moosite",
+  "ingredient": {
+    "item": "mooseblock:deepslate_moosite_ore"
+  },
+  "result": "mooseblock:moosite"
+}

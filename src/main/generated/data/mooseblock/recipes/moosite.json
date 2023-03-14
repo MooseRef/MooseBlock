@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "mooseblock:block_of_moosite"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "mooseblock:moosite"
+  }
+}

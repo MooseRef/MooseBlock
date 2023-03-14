@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "mooseblock:block/stripped_mood_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "mooseblock:block/stripped_mood_wood"
+    },
+    "axis=z": {
+      "model": "mooseblock:block/stripped_mood_wood",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "mooseblock:borpite"
+    }
+  },
+  "pattern": [
+    "   ",
+    "X X",
+    "X X"
+  ],
+  "result": {
+    "item": "mooseblock:borpite_boots"
+  }
+}
