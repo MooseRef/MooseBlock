@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:glowstone"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "X": {
+      "item": "mooseblock:mood_planks"
+    }
+  },
+  "pattern": [
+    "XRX",
+    "RGR",
+    "XRX"
+  ],
+  "result": {
+    "item": "mooseblock:mood_redstone_lamp"
+  }
+}

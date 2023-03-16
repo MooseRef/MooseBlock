@@ -1,4 +1,4 @@
-// 1.19.3	2023-03-16T09:42:34.3006179	MooseBlock/Block Loot Tables
+// 1.19.3	2023-03-16T14:28:37.0167909	MooseBlock/Block Loot Tables
 251d1abc5473175ed0b36c507a5d052e6cbb8106 data\mooseblock\loot_tables\blocks\white_rose.json
 b0a158580921f89774cafc9d0c4befbfcfba180d data\mooseblock\loot_tables\blocks\gneiss_stairs.json
 1a85dec2fec24121b9eae963aa9fb38beb691e7b data\mooseblock\loot_tables\blocks\block_of_borpite.json
@@ -15,8 +15,8 @@ c6cd4d8a785e9b97c42bc627089e931ae36deb7c data\mooseblock\loot_tables\blocks\purp
 52d0bd2d7f8b20ef6cfd4c8ac0ced20c4c676cab data\mooseblock\loot_tables\blocks\mood_fence_gate.json
 510899dc4f2e77c1c4aca08a5214cb1a93ece457 data\mooseblock\loot_tables\blocks\regen_pad.json
 33e2b29844fab6e4bb865a5ca235fd56e5c1d389 data\mooseblock\loot_tables\blocks\mood_wood.json
-cf5043cb737cab5c9957183e3eb4b742bf7f7871 data\mooseblock\loot_tables\blocks\mood_slab.json
 7d3f000d60f9c9d78b4edfd29b1392961ee4ece7 data\mooseblock\loot_tables\blocks\polished_gneiss_wall.json
+cf5043cb737cab5c9957183e3eb4b742bf7f7871 data\mooseblock\loot_tables\blocks\mood_slab.json
 45f35aefbe2e452af819dc9ba4b35c5066226a6f data\mooseblock\loot_tables\blocks\orange_rose.json
 f65b7a9be3d1b36ddfe288eaf8c9a28577aba945 data\mooseblock\loot_tables\blocks\pink_rose.json
 ef498ea3bada903421ae0100e1a67da650a0780b data\mooseblock\loot_tables\blocks\mood_door.json
@@ -57,4 +57,5 @@ c369080632614c4112a3cf4cb9e8edecbe217274 data\mooseblock\loot_tables\blocks\gnei
 a26bedacab10f046b53f9efbfe658966fad603ff data\mooseblock\loot_tables\blocks\mood_fence.json
 f483f99ed86d77d595371c17581fa8413b396f5f data\mooseblock\loot_tables\blocks\potted_purple_rose.json
 e91bc7a6f50a812084a34f8dffa23f64c1d1f1bc data\mooseblock\loot_tables\blocks\moosite_ore.json
+08ad9e8eed40c57e1ad39891699a0f60ae06cf96 data\mooseblock\loot_tables\blocks\mood_redstone_lamp.json
 a80cbc7d1fd7f97b4555ec5eeaefb5d00da50e43 data\mooseblock\loot_tables\blocks\polished_gneiss.json
