@@ -10,11 +10,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.resource.featuretoggle.FeatureFlags;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.SignType;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.moose.mooseblock.block.custom.MoodLeavesBlock;
 import net.moose.mooseblock.block.custom.RegenPadBlock;
@@ -94,6 +92,10 @@ public class ModBlocks {
             new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
     public static final Block POTTED_ILL_ROSE = registerBlockWithoutItem("potted_ill_rose",
             new FlowerPotBlock(ILL_ROSE, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
+    public static final Block CYAN_ROSE = registerBlock("cyan_rose",
+            new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
+    public static final Block POTTED_CYAN_ROSE = registerBlockWithoutItem("potted_cyan_rose",
+            new FlowerPotBlock(CYAN_ROSE, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
     public static final Block BLUE_ROSE = registerBlock("blue_rose",
             new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
     public static final Block POTTED_BLUE_ROSE = registerBlockWithoutItem("potted_blue_rose",

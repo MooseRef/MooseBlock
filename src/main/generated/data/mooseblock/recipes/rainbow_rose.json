@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "mooseblock:blue_rose"
+    },
+    "C": {
+      "item": "mooseblock:cyan_rose"
+    },
+    "G": {
+      "item": "mooseblock:ill_rose"
+    },
+    "M": {
+      "item": "mooseblock:purple_rose"
+    },
+    "N": {
+      "item": "minecraft:gold_nugget"
+    },
+    "O": {
+      "item": "mooseblock:orange_rose"
+    },
+    "P": {
+      "item": "mooseblock:pink_rose"
+    },
+    "R": {
+      "item": "mooseblock:red_rose"
+    },
+    "Y": {
+      "item": "mooseblock:yellow_rose"
+    }
+  },
+  "pattern": [
+    "YGC",
+    "ONB",
+    "RPM"
+  ],
+  "result": {
+    "item": "mooseblock:rainbow_rose"
+  }
+}

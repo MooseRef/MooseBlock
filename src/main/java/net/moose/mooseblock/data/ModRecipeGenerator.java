@@ -211,6 +211,23 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
         offerSingleOutputShapelessRecipe(exporter,ModItems.TOMATO_SEEDS,ModItems.TOMATO,"tomato_seeds");
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.RAINBOW_ROSE)
+                .pattern("YGC")
+                .pattern("ONB")
+                .pattern("RPM")
+                .input('R',ModBlocks.RED_ROSE)
+                .input('O',ModBlocks.ORANGE_ROSE)
+                .input('Y',ModBlocks.YELLOW_ROSE)
+                .input('G',ModBlocks.ILL_ROSE)
+                .input('C',ModBlocks.CYAN_ROSE)
+                .input('B',ModBlocks.BLUE_ROSE)
+                .input('M',ModBlocks.PURPLE_ROSE)
+                .input('P',ModBlocks.PINK_ROSE)
+                .input('N',Items.GOLD_NUGGET)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.ILL_ROSE),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.ILL_ROSE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.RAINBOW_ROSE)));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.GOXITE_BOOTS)
                 .pattern("   ")
                 .pattern("X X")
@@ -368,29 +385,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModItems.BORPITE),
                         FabricRecipeProvider.conditionsFromItem(ModItems.BORPITE))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.BORPITE_PICKAXE)));
-
-        // ADDED MANUALLY UNTIL I FIND A FIX
-
-//        SmithingRecipeJsonBuilder.create(Ingredient.ofItems(Items.NETHERITE_BOOTS),Ingredient.ofItems(ModItems.MOOSITE),
-//                RecipeCategory.MISC, ModItems.MOOSITE_BOOTS);
-//        SmithingRecipeJsonBuilder.create(Ingredient.ofItems(Items.NETHERITE_CHESTPLATE),Ingredient.ofItems(ModItems.MOOSITE),
-//                RecipeCategory.MISC, ModItems.MOOSITE_CHESTPLATE);
-//        SmithingRecipeJsonBuilder.create(Ingredient.ofItems(Items.NETHERITE_LEGGINGS),Ingredient.ofItems(ModItems.MOOSITE),
-//                RecipeCategory.MISC, ModItems.MOOSITE_LEGGINGS);
-//        SmithingRecipeJsonBuilder.create(Ingredient.ofItems(Items.NETHERITE_HELMET),Ingredient.ofItems(ModItems.MOOSITE),
-//                RecipeCategory.MISC, ModItems.MOOSITE_HELMET);
-//        SmithingRecipeJsonBuilder.create(Ingredient.ofItems(Items.NETHERITE_AXE),Ingredient.ofItems(ModItems.MOOSITE),
-//                RecipeCategory.MISC, ModItems.MOOSITE_AXE);
-//        SmithingRecipeJsonBuilder.create(Ingredient.ofItems(Items.NETHERITE_HOE),Ingredient.ofItems(ModItems.MOOSITE),
-//                RecipeCategory.MISC, ModItems.MOOSITE_HOE);
-//        SmithingRecipeJsonBuilder.create(Ingredient.ofItems(Items.NETHERITE_SHOVEL),Ingredient.ofItems(ModItems.MOOSITE),
-//                RecipeCategory.MISC, ModItems.MOOSITE_SHOVEL);
-//        SmithingRecipeJsonBuilder.create(Ingredient.ofItems(Items.NETHERITE_SWORD),Ingredient.ofItems(ModItems.MOOSITE),
-//                RecipeCategory.MISC, ModItems.MOOSITE_SWORD);
-//        SmithingRecipeJsonBuilder.create(Ingredient.ofItems(Items.NETHERITE_PICKAXE), Ingredient.ofItems(ModItems.MOOSITE),
-//                RecipeCategory.MISC, ModItems.MOOSITE_PICKAXE);
-
-
 
                     }
 }
