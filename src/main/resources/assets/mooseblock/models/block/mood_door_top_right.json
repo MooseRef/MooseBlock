@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "textures": {
+    "bottom": "mooseblock:block/mood_door_bottom",
+    "top": "mooseblock:block/mood_door_top"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "mooseblock:item/mood_sapling"
+    "layer0": "mooseblock:block/mood_sapling"
   }
 }

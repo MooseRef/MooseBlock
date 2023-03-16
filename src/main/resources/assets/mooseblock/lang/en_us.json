@@ -41,16 +41,22 @@
 
   "item.mooseblock.dice_icosahedron" : "Dice Icosahedron",
 
+  "item.mooseblock.glue_bucket": "Glue Bucket",
+
   "block.mooseblock.mood_log": "Mood Log",
   "block.mooseblock.mood_wood": "Mood Wood",
   "block.mooseblock.stripped_mood_log": "Stripped Mood Log",
   "block.mooseblock.stripped_mood_wood": "Stripped Mood Wood",
   "block.mooseblock.mood_leaves": "Mood Leaves",
-  "block.mooseblock.mood_sapling": "Mood Sapling",
   "block.mooseblock.mood_planks": "Mood Planks",
   "block.mooseblock.mood_stairs": "Mood Stairs",
   "block.mooseblock.mood_slab": "Mood Slab",
-
+  "block.mooseblock.mood_fence": "Mood Fence",
+  "block.mooseblock.mood_fence_gate": "Mood Fence Gate",
+  "block.mooseblock.mood_button": "Mood Button",
+  "block.mooseblock.mood_pressure_plate": "Mood Pressure Plate",
+  "block.mooseblock.mood_door": "Mood Door",
+  "block.mooseblock.mood_trapdoor": "Mood Trapdoor",
 
   "block.mooseblock.moosite_ore": "Moosite Ore",
   "block.mooseblock.deepslate_moosite_ore": "Deepslate Moosite Ore",
@@ -65,13 +71,39 @@
   "block.mooseblock.block_of_raw_borpite": "Block of Raw Borpite",
 
   "block.mooseblock.gneiss": "Gneiss",
-  "block.mooseblock.polished_gneiss": "Polished Gneiss",
   "block.mooseblock.gneiss_stairs": "Gneiss Stairs",
   "block.mooseblock.gneiss_slab": "Gneiss Slab",
+  "block.mooseblock.gneiss_wall": "Gneiss Wall",
+  "block.mooseblock.polished_gneiss": "Polished Gneiss",
   "block.mooseblock.polished_gneiss_stairs": "Polished Gneiss Stairs",
   "block.mooseblock.polished_gneiss_slab": "Polished Gneiss Slab",
+  "block.mooseblock.polished_gneiss_wall": "Polished Gneiss Wall",
 
   "block.mooseblock.tomato_crop": "Tomato Crop",
+
+  "block.mooseblock.mood_sapling": "Mood Sapling",
+  "block.mooseblock.potted_mood_sapling": "Potted Mood Sapling",
+
+  "block.mooseblock.black_rose": "Black Rose",
+  "block.mooseblock.potted_black_rose": "Potted Black Rose",
+  "block.mooseblock.white_rose": "White Rose",
+  "block.mooseblock.potted_white_rose": "Potted White Rose",
+  "block.mooseblock.red_rose": "Red Rose",
+  "block.mooseblock.potted_red_rose": "Potted Red Rose",
+  "block.mooseblock.orange_rose": "Orange Rose",
+  "block.mooseblock.potted_orange_rose": "Potted Orange Rose",
+  "block.mooseblock.yellow_rose": "Yellow Rose",
+  "block.mooseblock.potted_yellow_rose": "Potted Yellow Rose",
+  "block.mooseblock.ill_rose": "Ill Rose",
+  "block.mooseblock.potted_ill_rose": "Potted Ill Rose",
+  "block.mooseblock.blue_rose": "Blue Rose",
+  "block.mooseblock.potted_blue_rose": "Potted Blue Rose",
+  "block.mooseblock.pink_rose": "Pink Rose",
+  "block.mooseblock.potted_pink_rose": "Potted Pink Rose",
+  "block.mooseblock.purple_rose": "Purple Rose",
+  "block.mooseblock.potted_purple_rose": "Potted Purple Rose",
+  "block.mooseblock.rainbow_rose": "Rainbow Rose",
+  "block.mooseblock.potted_rainbow_rose": "Potted Rainbow Rose",
 
   "block.mooseblock.regen_pad": "Regen Pad",
 

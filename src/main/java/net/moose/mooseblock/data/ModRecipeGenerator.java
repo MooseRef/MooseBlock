@@ -9,6 +9,7 @@ import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 import net.moose.mooseblock.block.ModBlocks;
 import net.moose.mooseblock.item.ModItems;
+import net.moose.mooseblock.util.ModTags;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -23,8 +24,8 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter)
     {
-        // FIX PLANKS AFTER ITEMS TAGS
-        // offerPlanksRecipe(exporter,ModBlocks.MOOD_PLANKS, ItemTags.OAK_LOGS,4);
+
+        offerPlanksRecipe(exporter,ModBlocks.MOOD_PLANKS, ModTags.Items.MOOD_LOGS,4);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.MOOD_WOOD)
                 .pattern("XX")
@@ -42,16 +43,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_MOOD_LOG),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_MOOD_LOG))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.STRIPPED_MOOD_WOOD)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.STICK, 4)
-                .pattern("X")
-                .pattern("X")
-                .pattern(" ")
-                .input('X',ModBlocks.MOOD_PLANKS)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.MOOD_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.MOOD_PLANKS))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(Items.STICK)));
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.MOOD_STAIRS, 4)
                 .pattern("X  ")
                 .pattern("XX ")
@@ -68,88 +59,51 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.MOOD_PLANKS),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.MOOD_PLANKS))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.MOOD_SLAB)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.CRAFTING_TABLE)
-                .pattern("XX")
-                .pattern("XX")
-                .pattern("  ")
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.MOOD_FENCE, 3)
+                .pattern("   ")
+                .pattern("XSX")
+                .pattern("XSX")
+                .input('X',ModBlocks.MOOD_PLANKS)
+                .input('S',Items.STICK)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.MOOD_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.MOOD_PLANKS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.MOOD_FENCE)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.MOOD_FENCE_GATE, 1)
+                .pattern("   ")
+                .pattern("SXS")
+                .pattern("SXS")
+                .input('X',ModBlocks.MOOD_PLANKS)
+                .input('S',Items.STICK)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.MOOD_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.MOOD_PLANKS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.MOOD_FENCE_GATE)));
+        offerSingleOutputShapelessRecipe(exporter,ModBlocks.MOOD_BUTTON,ModBlocks.MOOD_PLANKS,"wooden_button");
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.MOOD_PRESSURE_PLATE, 1)
+                .pattern("   ")
+                .pattern("   ")
+                .pattern("XX ")
                 .input('X',ModBlocks.MOOD_PLANKS)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.MOOD_PLANKS),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.MOOD_PLANKS))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(Items.CRAFTING_TABLE)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.CARTOGRAPHY_TABLE)
-                .pattern("PP")
-                .pattern("XX")
-                .pattern("XX")
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.MOOD_PRESSURE_PLATE)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.MOOD_DOOR, 3)
+                .pattern("XX ")
+                .pattern("XX ")
+                .pattern("XX ")
                 .input('X',ModBlocks.MOOD_PLANKS)
-                .input('P',Items.PAPER)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.MOOD_PLANKS),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.MOOD_PLANKS))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(Items.CARTOGRAPHY_TABLE)));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.CHEST)
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.MOOD_DOOR)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.MOOD_TRAPDOOR, 2)
+                .pattern("   ")
                 .pattern("XXX")
-                .pattern("X X")
                 .pattern("XXX")
                 .input('X',ModBlocks.MOOD_PLANKS)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.MOOD_PLANKS),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.MOOD_PLANKS))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(Items.CHEST)));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.BARREL)
-                .pattern("XxX")
-                .pattern("X X")
-                .pattern("XxX")
-                .input('X',ModBlocks.MOOD_PLANKS)
-                .input('x',ModBlocks.MOOD_SLAB)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.MOOD_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.MOOD_PLANKS))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(Items.BARREL)));
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.MOOD_TRAPDOOR)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.WOODEN_AXE)
-                .pattern("XX")
-                .pattern("XS")
-                .pattern(" S")
-                .input('X',ModBlocks.MOOD_PLANKS)
-                .input('S', Items.STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.MOOD_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.MOOD_PLANKS))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(Items.WOODEN_AXE)));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.WOODEN_HOE)
-                .pattern("XX")
-                .pattern(" S")
-                .pattern(" S")
-                .input('X',ModBlocks.MOOD_PLANKS)
-                .input('S', Items.STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.MOOD_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.MOOD_PLANKS))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(Items.WOODEN_HOE)));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.WOODEN_SHOVEL)
-                .pattern("X")
-                .pattern("S")
-                .pattern("S")
-                .input('X',ModBlocks.MOOD_PLANKS)
-                .input('S', Items.STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.MOOD_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.MOOD_PLANKS))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(Items.WOODEN_SHOVEL)));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.WOODEN_SWORD)
-                .pattern("X")
-                .pattern("X")
-                .pattern("S")
-                .input('X',ModBlocks.MOOD_PLANKS)
-                .input('S', Items.STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.MOOD_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.MOOD_PLANKS))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(Items.WOODEN_SWORD)));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.WOODEN_PICKAXE)
-                .pattern("XXX")
-                .pattern(" S ")
-                .pattern(" S ")
-                .input('X',ModBlocks.MOOD_PLANKS)
-                .input('S', Items.STICK)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.MOOD_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.MOOD_PLANKS))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(Items.WOODEN_PICKAXE)));
+
 
 
         offerSmelting(exporter, List.of(ModItems.RAW_GOXITE), RecipeCategory.MISC, ModItems.GOXITE,
@@ -211,6 +165,14 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.GNEISS),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.GNEISS))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.GNEISS_SLAB)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.GNEISS_WALL, 6)
+                .pattern("   ")
+                .pattern("XXX")
+                .pattern("XXX")
+                .input('X',ModBlocks.GNEISS)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.GNEISS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.GNEISS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.GNEISS_WALL)));
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.POLISHED_GNEISS_STAIRS, 4)
                 .pattern("X  ")
                 .pattern("XX ")
@@ -227,6 +189,14 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.POLISHED_GNEISS),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.POLISHED_GNEISS))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.POLISHED_GNEISS_SLAB)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.POLISHED_GNEISS_WALL, 6)
+                .pattern("   ")
+                .pattern("XXX")
+                .pattern("XXX")
+                .input('X',ModBlocks.POLISHED_GNEISS)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.POLISHED_GNEISS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.POLISHED_GNEISS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.POLISHED_GNEISS_WALL)));
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.GOXITE, RecipeCategory.DECORATIONS,
                 ModBlocks.BLOCK_OF_GOXITE);

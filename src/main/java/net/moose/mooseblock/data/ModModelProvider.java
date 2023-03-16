@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
-import net.minecraft.item.Item;
 import net.moose.mooseblock.block.ModBlocks;
 import net.moose.mooseblock.item.ModItems;
 
@@ -38,8 +37,29 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MOOD_PLANKS);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MOOD_LEAVES);
 
-        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.MOOD_SAPLING,
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.MOOD_SAPLING, ModBlocks.POTTED_MOOD_SAPLING,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.BLACK_ROSE, ModBlocks.POTTED_BLACK_ROSE,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.WHITE_ROSE, ModBlocks.POTTED_WHITE_ROSE,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.RED_ROSE, ModBlocks.POTTED_RED_ROSE,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ORANGE_ROSE, ModBlocks.POTTED_ORANGE_ROSE,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.YELLOW_ROSE, ModBlocks.POTTED_YELLOW_ROSE,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ILL_ROSE, ModBlocks.POTTED_ILL_ROSE,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.BLUE_ROSE, ModBlocks.POTTED_BLUE_ROSE,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.PINK_ROSE, ModBlocks.POTTED_PINK_ROSE,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.PURPLE_ROSE, ModBlocks.POTTED_PURPLE_ROSE,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.RAINBOW_ROSE, ModBlocks.POTTED_RAINBOW_ROSE,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+
 
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.REGEN_PAD);
 
@@ -48,8 +68,6 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator)
     {
-        itemModelGenerator.register(Item.fromBlock(ModBlocks.MOOD_SAPLING), Models.GENERATED);
-
         itemModelGenerator.register(ModItems.GOXITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_GOXITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.GOXITE_BOOTS, Models.GENERATED);

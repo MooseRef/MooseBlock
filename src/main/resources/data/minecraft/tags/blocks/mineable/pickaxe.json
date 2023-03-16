@@ -16,11 +16,14 @@
     "mooseblock:regen_pad",
 
     "mooseblock:gneiss",
-    "mooseblock:polished_gneiss",
     "mooseblock:gneiss_stairs",
     "mooseblock:gneiss_slab",
+    "mooseblock:gneiss_wall",
+
+    "mooseblock:polished_gneiss",
     "mooseblock:polished_gneiss_stairs",
-    "mooseblock:polished_gneiss_slab"
+    "mooseblock:polished_gneiss_slab",
+    "mooseblock:polished_gneiss_wall"
 
   ]
 }

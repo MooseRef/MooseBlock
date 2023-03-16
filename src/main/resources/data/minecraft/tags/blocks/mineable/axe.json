@@ -1,6 +1,18 @@
 {
   "replace": false,
   "values": [
-
+    "mooseblock:mood_log",
+    "mooseblock:mood_wood",
+    "mooseblock:stripped_mood_log",
+    "mooseblock:stripped_mood_wood",
+    "mooseblock:mood_planks",
+    "mooseblock:mood_stairs",
+    "mooseblock:mood_slab",
+    "mooseblock:mood_fence",
+    "mooseblock:mood_fence_gate",
+    "mooseblock:mood_button",
+    "mooseblock:mood_pressure_plate",
+    "mooseblock:mood_door",
+    "mooseblock:mood_trapdoor"
   ]
 }

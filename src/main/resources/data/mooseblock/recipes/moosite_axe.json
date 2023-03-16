@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing",
   "addition": {
-    "item": "minecraft:moosite"
+    "item": "mooseblock:moosite"
   },
   "base": {
     "item": "minecraft:netherite_axe"

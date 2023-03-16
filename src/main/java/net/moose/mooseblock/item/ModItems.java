@@ -55,10 +55,7 @@ public class ModItems {
 
     public static final Item DICE_ICOSAHEDRON = registerItem("dice_icosahedron", new DiceIcosahedronItem(new FabricItemSettings().maxCount(1)));
 
-   // public static final Item MOOD_BOAT = registerItem("mood_boat", (Item)new BoatItem(false, BoatEntity.Type.OAK, new Item.Settings().maxCount(1)));
-   // public static final Item MOOD_CHEST_BOAT = registerItem("mood_chest_boat", (Item)new BoatItem(true, BoatEntity.Type.OAK, new Item.Settings().maxCount(1)));
-
-    public static void addItemsToItemGroup() {
+       public static void addItemsToItemGroup() {
 
         // ADD TO THE ABOVE ITEMS????
 

@@ -6,6 +6,7 @@ import net.moose.mooseblock.block.ModBlocks;
 import net.moose.mooseblock.block.custom.ModFlammableBlock;
 import net.moose.mooseblock.block.custom.ModStrippableBlock;
 import net.moose.mooseblock.enchantment.ModEnchantments;
+import net.moose.mooseblock.fluid.ModFluids;
 import net.moose.mooseblock.item.ModItemGroups;
 import net.moose.mooseblock.item.ModItems;
 import net.moose.mooseblock.particle.ModParticles;
@@ -35,10 +36,9 @@ public class mooseblock implements ModInitializer {
 
 		ModVillagers.registerVillagers();
 
+		ModFluids.register();
+
 		ModWorldGeneration.generateModWorldGen();
-
-
-
 
 		ModFlammableBlock.registerFlammableBlock();
 		ModStrippableBlock.registerStrippableBlocks();

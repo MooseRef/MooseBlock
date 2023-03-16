@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "mooseblock:mood_log",
+    "mooseblock:mood_wood",
+    "mooseblock:stripped_mood_log",
+    "mooseblock:stripped_mood_wood"
+  ]
+
+}

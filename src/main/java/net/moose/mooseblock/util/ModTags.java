@@ -10,8 +10,6 @@ import net.moose.mooseblock.mooseblock;
 public class ModTags {
     public static class Blocks {
 
-        public static final TagKey<Block> MOD_WOOD_PLANKS = createCommonTag("mod_wood_planks");
-
 
         public static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(mooseblock.MOD_ID, name));
@@ -24,8 +22,7 @@ public class ModTags {
 
     public static class Items {
 
-        public static final TagKey<Item> MOOSE_ORES = createCommonTag("Moose");
-
+        public static final TagKey<Item> MOOD_LOGS = createCommonTag("mood_logs");
 
 
         public static TagKey<Item> createTag(String name) {

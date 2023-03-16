@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "minecraft:mood_log",
-    "minecraft:mood_wood",
-    "minecraft:stripped_mood_log",
-    "minecraft:stripped_mood_wood"
-  ]
-}
