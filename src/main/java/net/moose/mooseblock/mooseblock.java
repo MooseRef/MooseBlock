@@ -9,6 +9,7 @@ import net.moose.mooseblock.enchantment.ModEnchantments;
 import net.moose.mooseblock.fluid.ModFluids;
 import net.moose.mooseblock.item.ModItemGroups;
 import net.moose.mooseblock.item.ModItems;
+import net.moose.mooseblock.painting.ModPaintings;
 import net.moose.mooseblock.particle.ModParticles;
 import net.moose.mooseblock.registries.ModRegistries;
 import net.moose.mooseblock.villager.ModVillagers;
@@ -35,6 +36,9 @@ public class mooseblock implements ModInitializer {
 		ModEnchantments.registerModEnchantments();
 
 		ModVillagers.registerVillagers();
+		ModVillagers.registerTrades();
+
+		ModPaintings.registerPaintings();
 
 		ModFluids.register();
 

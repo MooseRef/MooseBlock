@@ -13,6 +13,7 @@
     "mooseblock:mood_button",
     "mooseblock:mood_pressure_plate",
     "mooseblock:mood_door",
-    "mooseblock:mood_trapdoor"
+    "mooseblock:mood_trapdoor",
+    "mooseblock:mood_redstone_lamp"
   ]
 }

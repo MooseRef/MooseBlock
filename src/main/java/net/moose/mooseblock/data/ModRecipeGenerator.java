@@ -2,6 +2,7 @@ package net.moose.mooseblock.data;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.Items;
@@ -102,6 +103,17 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.MOOD_PLANKS),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.MOOD_PLANKS))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.MOOD_TRAPDOOR)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.MOOD_REDSTONE_LAMP, 1)
+                .pattern("XRX")
+                .pattern("RGR")
+                .pattern("XRX")
+                .input('X',ModBlocks.MOOD_PLANKS)
+                .input('R',Items.REDSTONE)
+                .input('G',Blocks.GLOWSTONE)
+
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.MOOD_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.MOOD_PLANKS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.MOOD_REDSTONE_LAMP)));
 
 
 

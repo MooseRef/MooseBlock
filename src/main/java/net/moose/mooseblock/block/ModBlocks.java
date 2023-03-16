@@ -15,6 +15,7 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.moose.mooseblock.block.custom.MoodLeavesBlock;
+import net.moose.mooseblock.block.custom.MoodRedstoneLampBlock;
 import net.moose.mooseblock.block.custom.RegenPadBlock;
 import net.moose.mooseblock.block.custom.TomatoCropBlock;
 import net.moose.mooseblock.item.ModItemGroups;
@@ -62,6 +63,10 @@ public class ModBlocks {
     public static final Block MOOD_TRAPDOOR = registerBlock("mood_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).strength(2.0f,3.0f).requiresTool().nonOpaque(),
                     SoundEvents.BLOCK_WOODEN_TRAPDOOR_CLOSE, SoundEvents.BLOCK_WOODEN_TRAPDOOR_OPEN), ModItemGroups.MOOSITE);
+    public static final Block MOOD_REDSTONE_LAMP = registerBlock("mood_redstone_lamp",
+            new MoodRedstoneLampBlock(FabricBlockSettings.of(Material.METAL).strength(4).requiresTool()
+                    .luminance(state -> state.get(MoodRedstoneLampBlock.LIT) ? 15 : 0)),ModItemGroups.MOOSITE);
+
 
     public static final Block MOOD_SAPLING = registerBlock("mood_sapling",
             new SaplingBlock(new MoodSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().breakInstantly().requiresTool().sounds(BlockSoundGroup.GRASS)),ModItemGroups.MOOSITE);

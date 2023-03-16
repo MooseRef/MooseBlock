@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=true": { "model": "mooseblock:block/mood_redstone_lamp_on" },
+    "lit=false": { "model": "mooseblock:block/mood_redstone_lamp_off"}
+    }
+  }

@@ -29,6 +29,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MOOD_PRESSURE_PLATE);
         addDrop(ModBlocks.MOOD_DOOR);
         addDrop(ModBlocks.MOOD_TRAPDOOR);
+        addDrop(ModBlocks.MOOD_REDSTONE_LAMP);
 
         addDrop(ModBlocks.MOOD_LEAVES,leavesDrops(ModBlocks.MOOD_LEAVES,ModBlocks.MOOD_SAPLING,SAPLING_DROP_CHANCE));
 
