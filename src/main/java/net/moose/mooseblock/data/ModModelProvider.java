@@ -37,6 +37,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MOOD_PLANKS);
 
 
+        blockStateModelGenerator.registerDoor(ModBlocks.MOOD_DOOR);
+        blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.MOOD_TRAPDOOR);
+
+
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MOOD_LEAVES);
 
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.MOOD_SAPLING, ModBlocks.POTTED_MOOD_SAPLING,

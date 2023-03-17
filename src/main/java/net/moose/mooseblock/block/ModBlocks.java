@@ -67,7 +67,6 @@ public class ModBlocks {
             new MoodRedstoneLampBlock(FabricBlockSettings.of(Material.METAL).strength(4).requiresTool()
                     .luminance(state -> state.get(MoodRedstoneLampBlock.LIT) ? 15 : 0)),ModItemGroups.MOOSITE);
 
-
     public static final Block MOOD_SAPLING = registerBlock("mood_sapling",
             new SaplingBlock(new MoodSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().breakInstantly().requiresTool().sounds(BlockSoundGroup.GRASS)),ModItemGroups.MOOSITE);
     public static final Block POTTED_MOOD_SAPLING = registerBlockWithoutItem("potted_mood_sapling",

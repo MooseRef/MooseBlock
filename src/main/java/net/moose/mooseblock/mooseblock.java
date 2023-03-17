@@ -12,6 +12,7 @@ import net.moose.mooseblock.item.ModItems;
 import net.moose.mooseblock.painting.ModPaintings;
 import net.moose.mooseblock.particle.ModParticles;
 import net.moose.mooseblock.registries.ModRegistries;
+import net.moose.mooseblock.util.ModLootTableModifiers;
 import net.moose.mooseblock.villager.ModVillagers;
 import net.moose.mooseblock.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
@@ -41,6 +42,8 @@ public class mooseblock implements ModInitializer {
 		ModPaintings.registerPaintings();
 
 		ModFluids.register();
+
+		ModLootTableModifiers.modifyLootTables();
 
 		ModWorldGeneration.generateModWorldGen();
 

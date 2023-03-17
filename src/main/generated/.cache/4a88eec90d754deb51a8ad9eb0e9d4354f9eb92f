@@ -1,4 +1,4 @@
-// 1.19.3	2023-03-16T14:28:37.0147903	MooseBlock/Recipes
+// 1.19.3	2023-03-16T16:10:55.9090368	MooseBlock/Recipes
 b1c4ca0df63553222a6d1a521ccfcf8e7ad73f40 data\mooseblock\recipes\polished_gneiss_stairs.json
 e163099be177ba3c5df26e896e865e2265837eb2 data\mooseblock\advancements\recipes\misc\goxite_shovel.json
 215c0c7ca865267f90d7dbb939e8a2f9f21cf7e8 data\mooseblock\recipes\stripped_mood_wood.json
@@ -56,8 +56,8 @@ a08f2b7e6e3cac8ebd81a8d082d8272a2f2a8ccb data\mooseblock\advancements\recipes\mi
 72c0ad4e88125f302f477f193c2db77bb2850326 data\mooseblock\recipes\goxite_from_blasting_deepslate_goxite_ore.json
 c88687a82366af8b9dd1da6335ad859212d9c487 data\mooseblock\recipes\goxite_from_blasting_goxite_ore.json
 079643723ffc8bbfaef0762f7ed3a6d34a49bfa0 data\mooseblock\recipes\goxite_shovel.json
-189f056dc3e6b0f7f9dbafa0f7b4e29483a3bd75 data\mooseblock\advancements\recipes\misc\goxite_from_blasting_deepslate_goxite_ore.json
 d603b2470fd9372583556ed88a48a4e6c73775a1 data\mooseblock\advancements\recipes\misc\goxite_from_smelting_raw_goxite.json
+189f056dc3e6b0f7f9dbafa0f7b4e29483a3bd75 data\mooseblock\advancements\recipes\misc\goxite_from_blasting_deepslate_goxite_ore.json
 951f97f314a92d67d5ce8a6b0cfaa1378df807d5 data\mooseblock\recipes\block_of_raw_goxite.json
 5256ccb1a0c851043d9f57d554132a3f0210fb53 data\mooseblock\recipes\goxite_sword.json
 2f573fad2872840c8199600690f0db17fcfe498d data\mooseblock\advancements\recipes\misc\goxite_chestplate.json
