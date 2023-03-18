@@ -1,4 +1,4 @@
-// 1.19.3	2023-03-16T16:10:55.9080365	MooseBlock/mooseblock
+// 1.19.3	2023-03-17T14:47:41.4353931	MooseBlock/mooseblock
 abfab923d6fa8d493724607a58e148725e4c7f86 data\mooseblock\worldgen\configured_feature\goxite_ore.json
 910b0ade92b3f3641d29ae22273ca9b927b1384d data\mooseblock\worldgen\configured_feature\mood_tree.json
 1dd7947cf2f647eb2da44f8e5e185b58c93f9005 data\mooseblock\worldgen\placed_feature\mood_placed.json
@@ -6,4 +6,6 @@ abfab923d6fa8d493724607a58e148725e4c7f86 data\mooseblock\worldgen\configured_fea
 7ca4675d977c2eb58dada246c359a78fb7608ac7 data\mooseblock\worldgen\configured_feature\borpite_ore.json
 9945eb06da68ef33d2e871b8e8c435adf3b8eb8e data\mooseblock\worldgen\placed_feature\borpite_ore_placed.json
 b931a2f6eb6b3da5f206920f6c4786f581a2835d data\mooseblock\worldgen\configured_feature\moosite_ore.json
+18bd378341580a3880e6f58ebc364ad3574f48fa data\mooseblock\worldgen\configured_feature\satin_tree.json
 2810bbd2d933995d4f0b59a8d26994daba39a055 data\mooseblock\worldgen\placed_feature\goxite_ore_placed.json
+1e54ebcd9e52ceadad0c78fe4742016656bf13ae data\mooseblock\worldgen\placed_feature\satin_placed.json
