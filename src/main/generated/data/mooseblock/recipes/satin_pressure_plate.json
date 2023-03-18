@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "mooseblock:satin_planks"
+    }
+  },
+  "pattern": [
+    "   ",
+    "   ",
+    "XX "
+  ],
+  "result": {
+    "item": "mooseblock:satin_pressure_plate"
+  }
+}

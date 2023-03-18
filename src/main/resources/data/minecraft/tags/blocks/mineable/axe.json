@@ -14,6 +14,20 @@
     "mooseblock:mood_pressure_plate",
     "mooseblock:mood_door",
     "mooseblock:mood_trapdoor",
-    "mooseblock:mood_redstone_lamp"
+    "mooseblock:mood_redstone_lamp",
+
+    "mooseblock:satin_log",
+    "mooseblock:satin_wood",
+    "mooseblock:stripped_satin_log",
+    "mooseblock:stripped_satin_wood",
+    "mooseblock:satin_planks",
+    "mooseblock:satin_stairs",
+    "mooseblock:satin_slab",
+    "mooseblock:satin_fence",
+    "mooseblock:satin_fence_gate",
+    "mooseblock:satin_button",
+    "mooseblock:satin_pressure_plate",
+    "mooseblock:satin_door",
+    "mooseblock:satin_trapdoor"
   ]
 }

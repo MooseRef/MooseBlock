@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "mooseblock:mood_fence",
-    "mooseblock:mood_fence_gate"
+    "mooseblock:mood_fence_gate",
+    "mooseblock:satin_fence",
+    "mooseblock:satin_fence_gate"
   ]
 }

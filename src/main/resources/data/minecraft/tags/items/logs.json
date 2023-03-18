@@ -4,7 +4,12 @@
     "mooseblock:mood_log",
     "mooseblock:mood_wood",
     "mooseblock:stripped_mood_log",
-    "mooseblock:stripped_mood_wood"
+    "mooseblock:stripped_mood_wood",
+
+    "mooseblock:satin_log",
+    "mooseblock:satin_wood",
+    "mooseblock:stripped_satin_log",
+    "mooseblock:stripped_satin_wood"
   ]
 
 

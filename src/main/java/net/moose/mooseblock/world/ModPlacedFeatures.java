@@ -16,6 +16,8 @@ import java.util.List;
 
 public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> MOOD_PLACED_KEY = registerKey("mood_placed");
+    public static final RegistryKey<PlacedFeature> SATIN_PLACED_KEY = registerKey("satin_placed");
+
     public static final RegistryKey<PlacedFeature> GOXITE_ORE_PLACED_KEY = registerKey("goxite_ore_placed");
     public static final RegistryKey<PlacedFeature> BORPITE_ORE_PLACED_KEY = registerKey("borpite_ore_placed");
     public static final RegistryKey<PlacedFeature> MOOSITE_ORE_PLACED_KEY = registerKey("moosite_ore_placed");
@@ -26,6 +28,8 @@ public class ModPlacedFeatures {
 
         register(context, MOOD_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MOOD_KEY),
                 VegetationPlacedFeatures.modifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1,0.1f,2),ModBlocks.MOOD_SAPLING));
+        register(context, SATIN_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.SATIN_KEY),
+                VegetationPlacedFeatures.modifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1,0.1f,1),ModBlocks.SATIN_SAPLING));
 
         register(context, GOXITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.GOXITE_KEY),
                 ModOrePlacement.modifiersWithCount(5,

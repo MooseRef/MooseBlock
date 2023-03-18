@@ -1,7 +1,8 @@
 {
   "replace": false,
   "values": [
-      "mooseblock:mood_leaves"
+      "mooseblock:mood_leaves",
+      "mooseblock:satin_leaves"
 
     ]
 

@@ -15,5 +15,13 @@ public class ModFlammableBlock {
         registry.add(ModBlocks.MOOD_LEAVES, 30, 60);
         registry.add(ModBlocks.MOOD_PLANKS, 5, 20);
 
+        registry.add(ModBlocks.SATIN_LOG, 5, 20);
+        registry.add(ModBlocks.SATIN_WOOD, 5, 20);
+        registry.add(ModBlocks.STRIPPED_SATIN_LOG, 5, 20);
+        registry.add(ModBlocks.STRIPPED_SATIN_WOOD, 5, 20);
+
+        registry.add(ModBlocks.SATIN_LEAVES, 30, 60);
+        registry.add(ModBlocks.SATIN_PLANKS, 5, 20);
+
     }
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "mooseblock:block/stripped_satin_log_top",
+    "side": "mooseblock:block/stripped_satin_log"
+  }
+}

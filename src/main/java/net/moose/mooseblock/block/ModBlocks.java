@@ -14,13 +14,11 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
-import net.moose.mooseblock.block.custom.MoodLeavesBlock;
-import net.moose.mooseblock.block.custom.MoodRedstoneLampBlock;
-import net.moose.mooseblock.block.custom.RegenPadBlock;
-import net.moose.mooseblock.block.custom.TomatoCropBlock;
+import net.moose.mooseblock.block.custom.*;
 import net.moose.mooseblock.item.ModItemGroups;
 import net.moose.mooseblock.mooseblock;
 import net.moose.mooseblock.world.tree.MoodSaplingGenerator;
+import net.moose.mooseblock.world.tree.SatinSaplingGenerator;
 
 public class ModBlocks {
 
@@ -71,6 +69,51 @@ public class ModBlocks {
             new SaplingBlock(new MoodSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().breakInstantly().requiresTool().sounds(BlockSoundGroup.GRASS)),ModItemGroups.MOOSITE);
     public static final Block POTTED_MOOD_SAPLING = registerBlockWithoutItem("potted_mood_sapling",
             new FlowerPotBlock(MOOD_SAPLING, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
+
+    public static final Block SATIN_LOG = registerBlock("satin_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)),ModItemGroups.MOOSITE);
+    public static final Block SATIN_WOOD = registerBlock("satin_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)),ModItemGroups.MOOSITE);
+    public static final Block STRIPPED_SATIN_LOG = registerBlock("stripped_satin_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG)),ModItemGroups.MOOSITE);
+    public static final Block STRIPPED_SATIN_WOOD = registerBlock("stripped_satin_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)),ModItemGroups.MOOSITE);
+    public static final Block SATIN_LEAVES = registerBlock("satin_leaves",
+            new SatinLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(0.2f).requiresTool()),ModItemGroups.MOOSITE);
+
+    public static final Block SATIN_PLANKS = registerBlock("satin_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+    public static final Block SATIN_STAIRS = registerBlock("satin_stairs",
+            new StairsBlock(SATIN_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+    public static final Block SATIN_SLAB = registerBlock("satin_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+    public static final Block SATIN_FENCE = registerBlock("satin_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+    public static final Block SATIN_FENCE_GATE = registerBlock("satin_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE).strength(2.0f,3.0f).requiresTool(),
+                    SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN), ModItemGroups.MOOSITE);
+    public static final Block SATIN_BUTTON = registerBlock("satin_button",
+            new ButtonBlock(FabricBlockSettings.of(Material.DECORATION).noCollision().strength(0.5f)
+                    .sounds(BlockSoundGroup.WOOD),
+                    30, true,
+                    SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF,
+                    SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_ON), ModItemGroups.MOOSITE);
+    public static final Block SATIN_PRESSURE_PLATE = registerBlock("satin_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, AbstractBlock.Settings.of(Material.WOOD,
+                    SATIN_PLANKS.getDefaultMapColor()).noCollision().strength(0.5f).sounds(BlockSoundGroup.WOOD),
+                    SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF,
+                    SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_ON),ModItemGroups.MOOSITE);
+    public static final Block SATIN_DOOR = registerBlock("satin_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).strength(2.0f,3.0f).requiresTool().nonOpaque(),
+                    SoundEvents.BLOCK_WOODEN_DOOR_CLOSE, SoundEvents.BLOCK_WOODEN_DOOR_OPEN), ModItemGroups.MOOSITE);
+    public static final Block SATIN_TRAPDOOR = registerBlock("satin_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).strength(2.0f,3.0f).requiresTool().nonOpaque(),
+                    SoundEvents.BLOCK_WOODEN_TRAPDOOR_CLOSE, SoundEvents.BLOCK_WOODEN_TRAPDOOR_OPEN), ModItemGroups.MOOSITE);
+
+    public static final Block SATIN_SAPLING = registerBlock("satin_sapling",
+            new SaplingBlock(new SatinSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().breakInstantly().requiresTool().sounds(BlockSoundGroup.GRASS)),ModItemGroups.MOOSITE);
+    public static final Block POTTED_SATIN_SAPLING = registerBlockWithoutItem("potted_satin_sapling",
+            new FlowerPotBlock(SATIN_SAPLING, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
 
     public static final Block BLACK_ROSE = registerBlock("black_rose",
             new FlowerBlock(StatusEffects.BAD_OMEN, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);

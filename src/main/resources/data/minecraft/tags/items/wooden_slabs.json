@@ -1,7 +1,8 @@
 {
   "replace": false,
   "values": [
-    "mooseblock:mood_slab"
+    "mooseblock:mood_slab",
+    "mooseblock:satin_slab"
   ]
 
 

@@ -8,5 +8,8 @@ public class ModStrippableBlock {
 
         StrippableBlockRegistry.register(ModBlocks.MOOD_LOG, ModBlocks.STRIPPED_MOOD_LOG);
         StrippableBlockRegistry.register(ModBlocks.MOOD_WOOD, ModBlocks.STRIPPED_MOOD_WOOD);
+
+        StrippableBlockRegistry.register(ModBlocks.SATIN_LOG, ModBlocks.STRIPPED_SATIN_LOG);
+        StrippableBlockRegistry.register(ModBlocks.SATIN_WOOD, ModBlocks.STRIPPED_SATIN_WOOD);
     }
 }

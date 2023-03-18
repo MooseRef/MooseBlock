@@ -36,15 +36,28 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MOOD_PLANKS);
 
-
         blockStateModelGenerator.registerDoor(ModBlocks.MOOD_DOOR);
         blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.MOOD_TRAPDOOR);
-
 
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MOOD_LEAVES);
 
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.MOOD_SAPLING, ModBlocks.POTTED_MOOD_SAPLING,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        blockStateModelGenerator.registerLog(ModBlocks.SATIN_LOG).log(ModBlocks.SATIN_LOG).wood(ModBlocks.SATIN_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_SATIN_LOG).log(ModBlocks.STRIPPED_SATIN_LOG).wood(ModBlocks.STRIPPED_SATIN_WOOD);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SATIN_PLANKS);
+
+
+        blockStateModelGenerator.registerDoor(ModBlocks.SATIN_DOOR);
+        blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.SATIN_TRAPDOOR);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SATIN_LEAVES);
+
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.SATIN_SAPLING, ModBlocks.POTTED_SATIN_SAPLING,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
+
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.BLACK_ROSE, ModBlocks.POTTED_BLACK_ROSE,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.WHITE_ROSE, ModBlocks.POTTED_WHITE_ROSE,

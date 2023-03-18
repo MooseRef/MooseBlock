@@ -57,6 +57,23 @@
   "block.mooseblock.mood_pressure_plate": "Mood Pressure Plate",
   "block.mooseblock.mood_door": "Mood Door",
   "block.mooseblock.mood_trapdoor": "Mood Trapdoor",
+  "block.mooseblock.mood_redstone_lamp": "Mood Redstone Lamp",
+
+  "block.mooseblock.satin_log": "Satin Log",
+  "block.mooseblock.satin_wood": "Satin Wood",
+  "block.mooseblock.stripped_satin_log": "Stripped Satin Log",
+  "block.mooseblock.stripped_satin_wood": "Stripped Satin Wood",
+  "block.mooseblock.satin_leaves": "Satin Leaves",
+  "block.mooseblock.satin_planks": "Satin Planks",
+  "block.mooseblock.satin_stairs": "Satin Stairs",
+  "block.mooseblock.satin_slab": "Satin Slab",
+  "block.mooseblock.satin_fence": "Satin Fence",
+  "block.mooseblock.satin_fence_gate": "Satin Fence Gate",
+  "block.mooseblock.satin_button": "Satin Button",
+  "block.mooseblock.satin_pressure_plate": "Satin Pressure Plate",
+  "block.mooseblock.satin_door": "Satin Door",
+  "block.mooseblock.satin_trapdoor": "Satin Trapdoor",
+
 
   "block.mooseblock.moosite_ore": "Moosite Ore",
   "block.mooseblock.deepslate_moosite_ore": "Deepslate Moosite Ore",
@@ -83,6 +100,9 @@
 
   "block.mooseblock.mood_sapling": "Mood Sapling",
   "block.mooseblock.potted_mood_sapling": "Potted Mood Sapling",
+
+  "block.mooseblock.satin_sapling": "Satin Sapling",
+  "block.mooseblock.potted_satin_sapling": "Potted Satin Sapling",
 
   "block.mooseblock.black_rose": "Black Rose",
   "block.mooseblock.potted_black_rose": "Potted Black Rose",

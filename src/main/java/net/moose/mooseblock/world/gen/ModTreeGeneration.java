@@ -10,6 +10,8 @@ public class ModTreeGeneration {
        public static void generateTrees(){
            BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PLAINS),
                    GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.MOOD_PLACED_KEY);
+           BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PLAINS),
+                   GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SATIN_PLACED_KEY);
 
        }
 }

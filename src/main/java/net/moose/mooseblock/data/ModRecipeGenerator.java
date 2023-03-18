@@ -110,11 +110,88 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .input('X',ModBlocks.MOOD_PLANKS)
                 .input('R',Items.REDSTONE)
                 .input('G',Blocks.GLOWSTONE)
-
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.MOOD_PLANKS),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.MOOD_PLANKS))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.MOOD_REDSTONE_LAMP)));
 
+        offerPlanksRecipe(exporter,ModBlocks.SATIN_PLANKS, ModTags.Items.SATIN_LOGS,4);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.SATIN_WOOD)
+                .pattern("XX")
+                .pattern("XX")
+                .pattern("  ")
+                .input('X',ModBlocks.SATIN_LOG)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.SATIN_LOG),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.SATIN_LOG))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.SATIN_WOOD)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.STRIPPED_SATIN_WOOD)
+                .pattern("XX")
+                .pattern("XX")
+                .pattern("  ")
+                .input('X',ModBlocks.STRIPPED_SATIN_LOG)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_SATIN_LOG),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_SATIN_LOG))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.STRIPPED_SATIN_WOOD)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SATIN_STAIRS, 4)
+                .pattern("X  ")
+                .pattern("XX ")
+                .pattern("XXX")
+                .input('X',ModBlocks.SATIN_PLANKS)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.SATIN_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.SATIN_PLANKS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.SATIN_STAIRS)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SATIN_SLAB, 3)
+                .pattern("   ")
+                .pattern("   ")
+                .pattern("XXX")
+                .input('X',ModBlocks.SATIN_PLANKS)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.SATIN_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.SATIN_PLANKS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.SATIN_SLAB)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SATIN_FENCE, 3)
+                .pattern("   ")
+                .pattern("XSX")
+                .pattern("XSX")
+                .input('X',ModBlocks.SATIN_PLANKS)
+                .input('S',Items.STICK)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.SATIN_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.SATIN_PLANKS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.SATIN_FENCE)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SATIN_FENCE_GATE, 1)
+                .pattern("   ")
+                .pattern("SXS")
+                .pattern("SXS")
+                .input('X',ModBlocks.SATIN_PLANKS)
+                .input('S',Items.STICK)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.SATIN_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.SATIN_PLANKS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.SATIN_FENCE_GATE)));
+        offerSingleOutputShapelessRecipe(exporter,ModBlocks.SATIN_BUTTON,ModBlocks.SATIN_PLANKS,"wooden_button");
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SATIN_PRESSURE_PLATE, 1)
+                .pattern("   ")
+                .pattern("   ")
+                .pattern("XX ")
+                .input('X',ModBlocks.SATIN_PLANKS)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.SATIN_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.SATIN_PLANKS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.SATIN_PRESSURE_PLATE)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SATIN_DOOR, 3)
+                .pattern("XX ")
+                .pattern("XG ")
+                .pattern("XX ")
+                .input('X',ModBlocks.SATIN_PLANKS)
+                .input('G',Items.GOLD_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.SATIN_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.SATIN_PLANKS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.SATIN_DOOR)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SATIN_TRAPDOOR, 2)
+                .pattern("   ")
+                .pattern("XXX")
+                .pattern("XGX")
+                .input('X',ModBlocks.SATIN_PLANKS)
+                .input('G',Items.GOLD_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.SATIN_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.SATIN_PLANKS));
 
 
 

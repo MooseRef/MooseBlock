@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mooseblock:block/satin_slab"
+    },
+    "type=double": {
+      "model": "mooseblock:block/satin_planks"
+    },
+    "type=top": {
+      "model": "mooseblock:block/satin_slab_top"
+    }
+  }
+}

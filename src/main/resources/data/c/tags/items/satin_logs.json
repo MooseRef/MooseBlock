@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "mooseblock:satin_log",
+    "mooseblock:satin_wood",
+    "mooseblock:stripped_satin_log",
+    "mooseblock:stripped_satin_wood"
+  ]
+}

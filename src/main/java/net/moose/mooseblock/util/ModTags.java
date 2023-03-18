@@ -23,6 +23,7 @@ public class ModTags {
     public static class Items {
 
         public static final TagKey<Item> MOOD_LOGS = createCommonTag("mood_logs");
+        public static final TagKey<Item> SATIN_LOGS = createCommonTag("satin_logs");
 
 
         public static TagKey<Item> createTag(String name) {

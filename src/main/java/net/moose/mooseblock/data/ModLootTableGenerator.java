@@ -33,6 +33,28 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.MOOD_LEAVES,leavesDrops(ModBlocks.MOOD_LEAVES,ModBlocks.MOOD_SAPLING,SAPLING_DROP_CHANCE));
 
+        addDrop(ModBlocks.MOOD_SAPLING);
+        addDrop(ModBlocks.POTTED_MOOD_SAPLING, pottedPlantDrops(ModBlocks.MOOD_SAPLING));
+
+        addDrop(ModBlocks.SATIN_LOG);
+        addDrop(ModBlocks.SATIN_WOOD);
+        addDrop(ModBlocks.STRIPPED_SATIN_LOG);
+        addDrop(ModBlocks.STRIPPED_SATIN_WOOD);
+        addDrop(ModBlocks.SATIN_PLANKS);
+        addDrop(ModBlocks.SATIN_STAIRS);
+        addDrop(ModBlocks.SATIN_SLAB);
+        addDrop(ModBlocks.SATIN_FENCE);
+        addDrop(ModBlocks.SATIN_FENCE_GATE);
+        addDrop(ModBlocks.SATIN_BUTTON);
+        addDrop(ModBlocks.SATIN_PRESSURE_PLATE);
+        addDrop(ModBlocks.SATIN_DOOR);
+        addDrop(ModBlocks.SATIN_TRAPDOOR);
+
+        addDrop(ModBlocks.SATIN_LEAVES,leavesDrops(ModBlocks.SATIN_LEAVES,ModBlocks.SATIN_SAPLING,SAPLING_DROP_CHANCE));
+
+        addDrop(ModBlocks.SATIN_SAPLING);
+        addDrop(ModBlocks.POTTED_SATIN_SAPLING, pottedPlantDrops(ModBlocks.SATIN_SAPLING));
+
         addDrop(ModBlocks.GOXITE_ORE,oreDrops(ModBlocks.GOXITE_ORE, ModItems.RAW_GOXITE));
         addDrop(ModBlocks.DEEPSLATE_GOXITE_ORE,oreDrops(ModBlocks.DEEPSLATE_GOXITE_ORE, ModItems.RAW_GOXITE));
         addDrop(ModBlocks.BLOCK_OF_GOXITE);
@@ -59,9 +81,6 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
 
         BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.TOMATO_CROP).properties(StatePredicate.Builder.create().exactMatch(TomatoCropBlock.AGE, 6));
         addDrop(ModBlocks.TOMATO_CROP,cropDrops(ModBlocks.TOMATO_CROP,ModItems.TOMATO_SEEDS,ModItems.TOMATO, builder));
-
-        addDrop(ModBlocks.MOOD_SAPLING);
-        addDrop(ModBlocks.POTTED_MOOD_SAPLING, pottedPlantDrops(ModBlocks.MOOD_SAPLING));
 
         addDrop(ModBlocks.BLACK_ROSE);
         addDrop(ModBlocks.POTTED_BLACK_ROSE, pottedPlantDrops(ModBlocks.BLACK_ROSE));
